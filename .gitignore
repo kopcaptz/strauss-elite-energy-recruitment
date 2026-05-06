@@ -1,0 +1,5 @@
+# Real workplace media stays local unless explicitly approved for upload.
+assets/raw/*
+!assets/raw/.gitkeep
+
+.DS_Store
