@@ -3,3 +3,7 @@ assets/raw/*
 !assets/raw/.gitkeep
 
 .DS_Store
+
+# Generated visual exports based on workplace references stay local until approved.
+assets/exports/*
+!assets/exports/.gitkeep
