@@ -5,32 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#080a0c" />
   <meta property="og:title" content="Energy Recruitment Lead Demo" />
-  <meta property="og:description" content="One-page industrial recruitment lead demo for energy infrastructure roles." />
+  <meta property="og:description" content="Industrial one-page recruitment lead demo using processed sketch-style factory visuals." />
   <meta property="og:image" content="https://kopcaptz.github.io/strauss-elite-energy-recruitment/assets/one-page-hebrew-lead-B-infra-lines.png" />
   <title>Energy Recruitment Lead Demo</title>
   <style>
-    :root{--bg:#080a0c;--card:#11151a;--text:#f7f3e8;--muted:#c8c2b3;--accent:#ffb82e}
+    :root{--bg:#080a0c;--card:#11151a;--text:#f7f3e8;--muted:#c8c2b3;--accent:#ffb82e;--accent2:#ff8d1a}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:radial-gradient(circle at top,#1b2028,#080a0c 58%);color:var(--text);font-family:Arial,'Arial Hebrew',sans-serif;line-height:1.45}
-    .wrap{width:min(1040px,100%);margin:auto;padding:18px 14px 46px}
+    body{margin:0;background:radial-gradient(circle at top,#202632,#080a0c 60%);color:var(--text);font-family:Arial,'Arial Hebrew',sans-serif;line-height:1.45}
+    .wrap{width:min(1080px,100%);margin:auto;padding:18px 14px 48px}
     header{padding:10px 4px 18px;text-align:center}
-    .kicker{color:var(--accent);font-weight:800;letter-spacing:.04em;font-size:13px;text-transform:uppercase;direction:ltr}
-    h1{font-size:clamp(29px,7vw,54px);line-height:1.05;margin:10px 0 8px}
-    .sub{color:var(--muted);font-size:clamp(16px,4vw,22px);margin:0 auto;max-width:760px}
-    .hero,.card,.note{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:24px;box-shadow:0 20px 80px rgba(0,0,0,.34)}
+    .kicker{color:var(--accent);font-weight:900;letter-spacing:.04em;font-size:13px;text-transform:uppercase;direction:ltr}
+    h1{font-size:clamp(30px,7.2vw,58px);line-height:1.04;margin:10px 0 8px}
+    .sub{color:var(--muted);font-size:clamp(16px,4vw,23px);margin:0 auto;max-width:820px}
+    .hero,.card,.note,.photo-card,.concept{background:rgba(255,255,255,.058);border:1px solid rgba(255,255,255,.13);border-radius:24px;box-shadow:0 20px 80px rgba(0,0,0,.34)}
     .hero{padding:12px;margin:18px 0 20px}
     img{width:100%;display:block;border-radius:18px;background:#000}
     .caption{direction:rtl;text-align:right;color:var(--muted);font-size:14px;margin-top:8px}
     .actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:14px 0 4px;direction:ltr}
-    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 14px;border-radius:999px;background:var(--accent);color:#111;text-decoration:none;font-weight:800;font-size:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 14px;border-radius:999px;background:var(--accent);color:#111;text-decoration:none;font-weight:900;font-size:14px}
     .btn.secondary{background:rgba(255,255,255,.10);color:var(--text);border:1px solid rgba(255,255,255,.16)}
-    .section-title{margin:26px 4px 12px;text-align:center;color:#fff;font-size:22px}
+    .section-title{margin:30px 4px 12px;text-align:center;color:#fff;font-size:clamp(22px,5vw,32px)}
+    .section-sub{text-align:center;color:var(--muted);margin:-4px auto 14px;max-width:760px;font-size:16px}
     .grid{display:grid;grid-template-columns:1fr;gap:14px}
-    @media (min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}}
-    .card{padding:12px}
-    .card h2{font-size:19px;margin:0 0 8px;color:var(--accent)}
-    .note{margin-top:20px;padding:14px;color:#fff4d4;font-size:15px;text-align:right;background:rgba(255,184,46,.11);border-color:rgba(255,184,46,.30);box-shadow:none}
+    @media (min-width:760px){.grid.three{grid-template-columns:repeat(3,1fr)}.grid.two{grid-template-columns:repeat(2,1fr)}}
+    .card,.photo-card,.concept{padding:12px}
+    .card h2,.photo-card h2,.concept h2{font-size:19px;margin:0 0 8px;color:var(--accent)}
+    .photo-card img{aspect-ratio:4/3;object-fit:cover;filter:contrast(1.08)}
+    .concept{padding:18px;text-align:right}
+    .concept h2{font-size:22px}.concept p{margin:6px 0;color:var(--muted)}.concept b{color:#fff}
+    .note{margin-top:22px;padding:16px;color:#fff4d4;font-size:15px;text-align:right;background:rgba(255,184,46,.11);border-color:rgba(255,184,46,.30);box-shadow:none}
     .ltr{direction:ltr;text-align:left;unicode-bidi:embed}
     a{color:var(--accent)}
   </style>
@@ -40,20 +44,65 @@
     <header>
       <div class="kicker">Demo Lead · One Page Recruitment</div>
       <h1>הדגמת ליד גיוס למחלקת אנרגיה</h1>
-      <p class="sub">סקיצה ויזואלית: תמונות תעשייה בסגנון איור + טקסט קצר וברור לגיוס הנדסאים ואנשי ניסיון.</p>
+      <p class="sub">תמונות תעשייה מעובדות בסגנון איור + טקסט חד וברור לגיוס הנדסאים ואנשי ניסיון.</p>
     </header>
 
     <section class="hero" id="main">
       <img src="assets/one-page-hebrew-lead-B-infra-lines.png" alt="Main recommended recruitment lead demo">
-      <div class="caption">המלצה ראשית: גרסה B — נקייה, מקצועית, קריאה במובייל.</div>
+      <div class="caption">המלצה ראשית: גרסה B — נקייה, מקצועית, קריאה במובייל, ומרגישה כמו קמפיין ולא כמו מודעת דרושים רגילה.</div>
       <div class="actions">
         <a class="btn" href="assets/one-page-hebrew-lead-B-infra-lines.png" target="_blank" rel="noopener">Open main image</a>
-        <a class="btn secondary" href="#variants">See variants</a>
+        <a class="btn secondary" href="#processed">Processed photos</a>
+        <a class="btn secondary" href="#variants">Lead variants</a>
       </div>
     </section>
 
-    <h2 class="section-title" id="variants">שלוש גרסאות לבדיקה</h2>
-    <section class="grid">
+    <h2 class="section-title" id="processed">התמונות המעובדות</h2>
+    <p class="section-sub">אלו הוויזואלים בסגנון “ציור/סקיצה” שעליהם אפשר לבנות את השפה הגרפית של הליד.</p>
+    <section class="grid two">
+      <div class="photo-card">
+        <h2>חדר דוודים / לב אנרגטי</h2>
+        <a href="assets/processed/01-boiler-room-sketch.jpg" target="_blank" rel="noopener"><img src="assets/processed/01-boiler-room-sketch.jpg" alt="Processed boiler room sketch"></a>
+        <div class="caption">מתאים לכותרת רגשית: הלב האנרגטי של המפעל.</div>
+      </div>
+      <div class="photo-card">
+        <h2>תשתיות וצנרת</h2>
+        <a href="assets/processed/02-pipe-platform-sketch-a.jpg" target="_blank" rel="noopener"><img src="assets/processed/02-pipe-platform-sketch-a.jpg" alt="Processed pipe platform sketch"></a>
+        <div class="caption">נותן תחושת עומק, אחריות ומערכות אמיתיות.</div>
+      </div>
+      <div class="photo-card">
+        <h2>מסדרון מערכות</h2>
+        <a href="assets/processed/03-pipe-platform-sketch-b.jpg" target="_blank" rel="noopener"><img src="assets/processed/03-pipe-platform-sketch-b.jpg" alt="Processed infrastructure sketch"></a>
+        <div class="caption">טוב לרקע נקי יותר, עם הרבה קווים ופרספקטיבה.</div>
+      </div>
+      <div class="photo-card">
+        <h2>חדר מדחסים</h2>
+        <a href="assets/processed/04-compressor-room-sketch.jpg" target="_blank" rel="noopener"><img src="assets/processed/04-compressor-room-sketch.jpg" alt="Processed compressor room sketch"></a>
+        <div class="caption">הכי טכני: מדחסים, אוויר, חדר מכונות, סביבה מקצועית.</div>
+      </div>
+    </section>
+
+    <h2 class="section-title">איך זה הופך לליד</h2>
+    <section class="grid three">
+      <div class="concept">
+        <h2>1 · Hook</h2>
+        <p><b>הלב האנרגטי של המפעל</b></p>
+        <p>המשפט הראשון מייצר גאווה וסקרנות, לא “עוד דרושים”.</p>
+      </div>
+      <div class="concept">
+        <h2>2 · Proof</h2>
+        <p><b>מדחסים · צ׳ילרים · דוודים</b></p>
+        <p>התמונה והציוד מסבירים מיד שמדובר בעבודה אמיתית בשטח.</p>
+      </div>
+      <div class="concept">
+        <h2>3 · Action</h2>
+        <p><b>מתאים לך? שלח/י הודעה</b></p>
+        <p>בסוף יש פעולה פשוטה — בלי טופס, בלי חיכוך.</p>
+      </div>
+    </section>
+
+    <h2 class="section-title" id="variants">שלוש גרסאות ליד לבדיקה</h2>
+    <section class="grid three">
       <div class="card">
         <h2>גרסה A · הלב האנרגטי</h2>
         <a href="assets/one-page-hebrew-lead-A-boiler-heart.png" target="_blank" rel="noopener"><img src="assets/one-page-hebrew-lead-A-boiler-heart.png" alt="Variant A"></a>
@@ -72,8 +121,8 @@
     </section>
 
     <section class="note">
-      <b>הערה:</b> זו הדגמת כיוון ראשונית. אפשר לשנות טקסט, צבע, תמונה וסגנון אחרי צפייה במובייל.
-      <div class="ltr" style="margin-top:8px;color:#d8cda8">Initial online demo · mobile-first review</div>
+      <b>סטטוס:</b> הדגמה ראשונית לצפייה במובייל. עכשיו אפשר לבחור תמונה מובילה, לשנות ניסוח, ולבנות גרסה סופית בעברית ואז בשפות נוספות.
+      <div class="ltr" style="margin-top:8px;color:#d8cda8">Processed sketch photos included · mobile-first demo</div>
     </section>
   </main>
 </body>
