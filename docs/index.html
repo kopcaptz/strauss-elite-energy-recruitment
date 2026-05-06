@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Energy Recruitment Lead Demo</title>
+  <style>
+    :root{--bg:#080a0c;--card:#11151a;--text:#f7f3e8;--muted:#c8c2b3;--accent:#ffb82e}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at top,#1b2028,#080a0c 55%);color:var(--text);font-family:Arial,'Arial Hebrew',sans-serif;line-height:1.45}
+    .wrap{width:min(980px,100%);margin:auto;padding:18px 14px 42px}
+    header{padding:10px 4px 18px;text-align:center}
+    .kicker{color:var(--accent);font-weight:800;letter-spacing:.04em;font-size:13px;text-transform:uppercase;direction:ltr}
+    h1{font-size:clamp(28px,7vw,52px);line-height:1.05;margin:10px 0 8px}
+    .sub{color:var(--muted);font-size:clamp(16px,4vw,22px);margin:0 auto;max-width:740px}
+    .hero,.card,.note{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:24px;box-shadow:0 20px 80px rgba(0,0,0,.34)}
+    .hero{padding:12px;margin:18px 0 20px}
+    img{width:100%;display:block;border-radius:18px;background:#000}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media (min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{padding:12px}
+    .card h2{font-size:19px;margin:0 0 8px;color:var(--accent)}
+    .caption{direction:rtl;text-align:right;color:var(--muted);font-size:14px;margin-top:8px}
+    .note{margin-top:20px;padding:14px;color:#fff4d4;font-size:15px;text-align:right;background:rgba(255,184,46,.11);border-color:rgba(255,184,46,.30);box-shadow:none}
+    .ltr{direction:ltr;text-align:left;unicode-bidi:embed}
+    a{color:var(--accent)}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="kicker">Demo Lead · One Page Recruitment</div>
+      <h1>הדגמת ליד גיוס למחלקת אנרגיה</h1>
+      <p class="sub">סקיצה ויזואלית: תמונות תעשייה בסגנון איור + טקסט קצר וברור לגיוס הנדסאים ואנשי ניסיון.</p>
+    </header>
+
+    <section class="hero">
+      <img src="assets/one-page-hebrew-lead-B-infra-lines.png" alt="Main demo lead">
+      <div class="caption">המלצה ראשית: גרסה B — נקייה, מקצועית, קריאה במובייל.</div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>גרסה A · הלב האנרגטי</h2>
+        <img src="assets/one-page-hebrew-lead-A-boiler-heart.png" alt="Variant A">
+        <div class="caption">יותר רגשית וחזקה, מתאימה למסר “לב המפעל”.</div>
+      </div>
+      <div class="card">
+        <h2>גרסה B · מומלצת</h2>
+        <img src="assets/one-page-hebrew-lead-B-infra-lines.png" alt="Variant B">
+        <div class="caption">הכי מאוזנת להצגה לאנשים אחרים.</div>
+      </div>
+      <div class="card">
+        <h2>גרסה C · חדר מדחסים</h2>
+        <img src="assets/one-page-hebrew-lead-C-compressor-room.png" alt="Variant C">
+        <div class="caption">יותר טכנית, עם תחושת חדר מכונות.</div>
+      </div>
+    </section>
+
+    <section class="note">
+      <b>הערה:</b> זו הדגמת כיוון ראשונית. אפשר לשנות טקסט, צבע, תמונה וסגנון אחרי צפייה במובייל.
+      <div class="ltr" style="margin-top:8px;color:#d8cda8">Initial online demo · mobile-first review</div>
+    </section>
+  </main>
+</body>
+</html>
